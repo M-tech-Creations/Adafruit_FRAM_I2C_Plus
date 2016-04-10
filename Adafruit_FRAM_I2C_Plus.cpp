@@ -242,19 +242,18 @@ uint16_t Adafruit_FRAM_I2C_Plus::twos_comp_check(uint16_t number)
     @params[in] length
                 The length of the String being read
 
-    @returns    The 8-bit value retrieved at framAddr
+    @returns    The String read from starting address ending at length
 */
 /**************************************************************************/
 String Adafruit_FRAM_I2C_Plus::read_String(int Addr, int length)
 {
-	String stemp = "";
+	char temparray[length];
 	for(int i=0;i<length;i++)
 	{
-		stemp.concat((char)read8(Addr+i));
-		delay(10);
-		
+		temparray[i]= (char)read8(Addr+i);
 	}
-	//delay(1000);//Give time for Processor to finish
+	String stemp(temparray);
+	
 	return stemp;
 	
 }
