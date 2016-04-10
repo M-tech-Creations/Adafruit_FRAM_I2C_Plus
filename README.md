@@ -26,4 +26,4 @@ To download. click the ZIP button in the top bar, and check this tutorial
 for instructions on how to install: 
 http://learn.adafruit.com/adafruit-all-about-arduino-libraries-install-use
 
-My write up can be found here:
+My write up can be found here: http://mario.mtechcreations.com/programing/my-adafruit-fram-i2c-plus-library/ 
