@@ -89,7 +89,7 @@ boolean Adafruit_FRAM_I2C_Plus::begin(uint8_t addr)
                 The I2C address of the FRAM memory chip (1010+A2+A1+A0)
     @params[in] framAddr
                 The 16-bit address to write to in FRAM memory
-    @params[in] i2cAddr
+    @params[in] value
                 The 8-bit value to write at framAddr
 */
 /**************************************************************************/
